@@ -15,3 +15,8 @@ body {
 .css-cveggr-MuiListItemIcon-root {
   min-width: 37px;
 }
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  min-width: 0 !important;
+  padding: 0 !important;
+}
