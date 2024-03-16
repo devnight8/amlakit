@@ -1,5 +1,9 @@
-import Header from "@/components/layouts/Header";
+import HomePage from "@/components/templates/HomePage";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 }

@@ -6,3 +6,12 @@ body {
   font-family: "yekanBakh", "sans-serif";
   font-weight: 400;
 }
+
+.css-10hburv-MuiTypography-root {
+  font-family: inherit !important;
+  text-align: right;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 37px;
+}

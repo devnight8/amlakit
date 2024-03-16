@@ -6,7 +6,12 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-section": "url('/img/hero-section.png')",
+       
+      },
+    },
   },
   plugins: [],
 };
