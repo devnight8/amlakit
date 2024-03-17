@@ -33,9 +33,9 @@ function Header() {
             </ul>
           </nav>
         </div>
-        <button className="bg-primary hover:bg-blue-800 transition-all py-2 px-4 rounded text-white text-[13px] md:text-[16px]">
+        <Link href="auth" className="bg-primary hover:bg-blue-800 transition-all py-2 px-4 rounded text-white text-[13px] md:text-[16px]">
           ثبت نام / ورود
-        </button>
+        </Link>
       </header>
     </>
   );
