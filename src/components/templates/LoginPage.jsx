@@ -1,8 +1,7 @@
-"use client"
-
-
+"use client";
 
 import {useState} from "react";
+import toast, {Toaster} from "react-hot-toast";
 
 function LoginPage() {
   const [register, setRegister] = useState({
@@ -13,13 +12,29 @@ function LoginPage() {
   });
 
   const changeHandler = (e) => {
-      const name = e.target.name;
-      const value = e.target.value;
+    const name = e.target.name;
+    const value = e.target.value;
     setRegister((register) => ({...register, [name]: value}));
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
+    if (!register.username) {
+      toast.error("نام کاربری خود را وارد کنید");
+      return;
+    }
+    if (!register.email) {
+      toast.error("ایمیل خود را وارد کنید");
+      return;
+    }
+    if (!register.phone) {
+      toast.error("تلفن تماس خود را وارد کنید");
+      return;
+    }
+    if (!register.password) {
+      toast.error("رمز عبور خود را وارد کنید");
+      return;
+    }
     console.log(register);
   };
   return (
@@ -122,7 +137,9 @@ function LoginPage() {
               />
             </div>
           </div>
-
+          <div>
+            <Toaster />
+          </div>
           <div>
             <button
               type="submit"
