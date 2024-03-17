@@ -20,3 +20,7 @@ body {
   min-width: 0 !important;
   padding: 0 !important;
 }
+
+.style-hero-section {
+  @apply bg-hero-section md:h-[695px] bg-cover bg-center bg-no-repeat w-full relative before:bg-black/80 before:w-full before:h-full before:absolute flex items-center justify-around rounded-tl-[10px] md:rounded-tl-[30px] rounded-tr-[10px] md:rounded-tr-[30px] rounded-br-[60px] md:rounded-br-[160px] rounded-bl-[10px] md:rounded-bl-[30px] overflow-hidden flex-col mt-4 md:mx-0 py-5;
+}

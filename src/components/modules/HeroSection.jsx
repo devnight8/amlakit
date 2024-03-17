@@ -3,7 +3,7 @@ import SearchIcon from "../../../public/icons/SearchIcon";
 
 function HeroSection() {
   return (
-    <section className="bg-hero-section md:h-[695px] bg-cover bg-center bg-no-repeat w-full relative before:bg-black/80 before:w-full before:h-full before:absolute flex items-center justify-around rounded-tl-[10px] md:rounded-tl-[30px] rounded-tr-[10px] md:rounded-tr-[30px] rounded-br-[60px] md:rounded-br-[160px] rounded-bl-[10px] md:rounded-bl-[30px] overflow-hidden flex-col mt-4 md:mx-0 py-5">
+    <section className="style-hero-section">
       <div className="flex flex-col items-center justify-center relative">
         <div className=" text-white relative text-center space-y-2 md:space-y-8">
           <h1 className="md:text-3xl lg:text-4xl font-bold">

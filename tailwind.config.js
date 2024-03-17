@@ -9,7 +9,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-section": "url('/img/hero-section.png')",
-       
+      },
+      colors: {
+        primary: "#1D4ED8",
       },
     },
   },
