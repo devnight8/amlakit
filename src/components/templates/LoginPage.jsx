@@ -35,6 +35,7 @@ function LoginPage() {
       toast.error("رمز عبور خود را وارد کنید");
       return;
     }
+    toast.success("ثبت نام شما با موفقیت انجام شد");
     console.log(register);
   };
   return (
