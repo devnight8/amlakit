@@ -5,7 +5,7 @@ import toast, {Toaster} from "react-hot-toast";
 
 function LoginPage() {
   const [register, setRegister] = useState({
-    username: "",
+    name: "",
     email: "",
     phone: "",
     password: "",
@@ -19,7 +19,7 @@ function LoginPage() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (!register.username) {
+    if (!register.name) {
       toast.error("نام کاربری خود را وارد کنید");
       return;
     }
@@ -27,10 +27,10 @@ function LoginPage() {
       toast.error("ایمیل خود را وارد کنید");
       return;
     }
-    if (!register.phone) {
-      toast.error("تلفن تماس خود را وارد کنید");
-      return;
-    }
+    // if (!register.phone) {
+    //   toast.error("تلفن تماس خود را وارد کنید");
+    //   return;
+    // }
     if (!register.password) {
       toast.error("رمز عبور خود را وارد کنید");
       return;
@@ -52,7 +52,7 @@ function LoginPage() {
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form className="space-y-6" action="#" method="POST">
+        <form className="space-y-6" action="http://127.0.0.1:8000/register" method="POST">
           <div>
             <label
               htmlFor="username"
@@ -62,7 +62,7 @@ function LoginPage() {
             <div className="mt-2">
               <input
                 id="username"
-                name="username"
+                name="name"
                 type="text"
                 value={register.username}
                 onChange={changeHandler}
@@ -91,7 +91,7 @@ function LoginPage() {
               />
             </div>
           </div>
-          <div>
+          {/* <div>
             <label
               htmlFor="phone"
               className="block text-sm font-medium leading-6 text-gray-900">
@@ -109,7 +109,7 @@ function LoginPage() {
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
               />
             </div>
-          </div>
+          </div> */}
           <div>
             <div className="flex items-center justify-between">
               <label
