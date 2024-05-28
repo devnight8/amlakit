@@ -3,7 +3,7 @@ import Option from "./Option";
 
 function Options() {
   return (
-   <section className="flex flex-col md:flex-row md:items-center gap-3 md:justify-between my-24">
+   <section className="flex flex-col md:flex-row md:items-center gap-6 md:justify-between my-24 w-10/12  m-auto">
     <Option
       title="رزرواسیون ۲۴ ساعته"
       subTitle="خدمات آنلاین در تمام روزهای هفته"

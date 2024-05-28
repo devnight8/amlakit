@@ -25,10 +25,10 @@ export default function MenuHumburger() {
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {['صفحه اصلی', 'املاک', 'درباره ما', 'تماس با ما'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+          <ListItem key={text} disablePadding className='hover:bg-blue-200 hover:text-blue-600 transition-all '>
+            <ListItemButton >
+              <ListItemIcon >
+                {index % 2 === 0 ? <InboxIcon  className=''/> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
