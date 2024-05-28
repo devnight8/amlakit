@@ -25,19 +25,19 @@ const pathname = usePathname();
               <li className={pathname ==="/" ? ` text-primary` : `hover:text-primary transition-all`}>
                 <Link href="/">صفحه اصلی </Link>
               </li>
-              <li className={pathname ==="amlak" ? ` text-primary` : `hover:text-primary transition-all`}>
+              <li className={pathname ==="/amlak" ? ` text-primary` : `hover:text-primary transition-all`}>
                 <Link href="/amlak">املاک</Link>
               </li>
-              <li className={pathname ==="about-us" ? ` text-primary` : `hover:text-primary transition-all`}>
-                <Link href="about-us">درباره ما </Link>
+              <li className={pathname ==="/about-us" ? ` text-primary` : `hover:text-primary transition-all`}>
+                <Link href="/about-us">درباره ما </Link>
               </li>
-              <li className={pathname ==="contact-us" ? ` text-primary` : `hover:text-primary transition-all`}>
-                <Link href="contact-us">تماس با ما </Link>
+              <li className={pathname ==="/contact-us" ? ` text-primary` : `hover:text-primary transition-all`}>
+                <Link href="/contact-us">تماس با ما </Link>
               </li>
             </ul>
           </nav>
         </div>
-        <Link href="auth" className="bg-primary hover:bg-blue-800 transition-all py-2 px-4 rounded text-white text-[13px] md:text-[16px]">
+        <Link href="auth" className="bg-primary hover:bg-blue-800 transition-all py-2 px-4 rounded-full text-white text-[13px] md:text-[16px]">
           ثبت نام / ورود
         </Link>
       </header>
